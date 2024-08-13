@@ -2,8 +2,8 @@ from threading import Thread
 import time
 
 class Knight(Thread):
-    def __init__(self, name, power,*args,**kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, name, power):
+        super().__init__()
         self.name = name
         self.power = power
         self.army = 100
